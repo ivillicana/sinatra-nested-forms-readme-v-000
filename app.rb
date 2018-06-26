@@ -14,7 +14,7 @@ post '/student' do
   end
   @courses = Course.all
 
-  erb :students
+  erb :student
 end
 
 end
