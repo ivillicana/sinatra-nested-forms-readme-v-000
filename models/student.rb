@@ -1,5 +1,5 @@
 class Student
-  attr_reader :name, :grades
+  attr_reader :name, :grade
 
   STUDENTS = []
 
@@ -8,3 +8,8 @@ class Student
     @grade = params[:grade]
     STUDENTS << self
   end
+
+  def self.all
+    STUDENTS
+  end
+end
